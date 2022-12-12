@@ -5,9 +5,11 @@
 	<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
 	{{ end }}
 	<div>
-		{{ .Summary }}
-		{{ if .Truncated }}
+		<p>
+			{{ .Summary }}
+			{{ if .Truncated }}
 			<a href="{{ .Permalink }}">Read more...</a>
-		{{ end }}
+			{{ end }}
+		</p>
 	</div>
 </article>

@@ -1,19 +1,83 @@
 :root {
-    --fonts-serif: "Times New Roman", Georgia, "Songti SC", "Noto Serif CJK SC", "Source Han Serif SC", "Source Han Serif CN", STSong, "AR PL New Sung", "AR PL SungtiL GB", NSimSun, SimSun, "TW\-Sung", "WenQuanYi Bitmap Song", "AR PL UMing CN", "AR PL UMing HK", "AR PL UMing TW", "AR PL UMing TW MBE", PMingLiU, MingLiU, serif;
+    --fonts-serif: "Merriweather", "Times New Roman", Georgia, "Songti SC", "Noto Serif CJK SC", "Source Han Serif SC", "Source Han Serif CN", STSong, "AR PL New Sung", "AR PL SungtiL GB", NSimSun, SimSun, "TW\-Sung", "WenQuanYi Bitmap Song", "AR PL UMing CN", "AR PL UMing HK", "AR PL UMing TW", "AR PL UMing TW MBE", PMingLiU, MingLiU, serif;
     --fonts-sans-serif: -apple-system, "Noto Sans", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans SC", "Source Han Sans CN", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
     --fonts-monospace: "JetBrains Mono", Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace;
-  }
+}
+
+h1, h2, h3, h4, h5, h6 { line-height: 1.25; }
+h1, .h1 {
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+a:hover { color: #069; }
+
+h2, .h2, h3, .h3, h4, h5, h6 {
+    font-size: 24px;
+    margin-bottom: 16px;
+}
 
 code {
     font-family: var(--fonts-monospace);
-    padding-left: 4px;
-    padding-right: 4px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+p {
+    font-size: 18px;
 }
 
 pre {
     background-color: rgba(222,222,222, 0.3);
+    padding-left: 1em;
+    overflow-x: scroll;
 }
 
-p code{
+p code {
+    max-width: 100%;
     background-color: rgba(222,222,222, 0.3);
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+blockquote {
+    color: rgb(67, 66, 66)
+}
+
+footer p,
+.wrap {
+    width: 90%;
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 32px 5% 64px 5%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    list-style: none;
+    padding-left: 1em;
+}
+
+nav li{
+    margin-right: 4em;
+    font-size: 22px;
+}
+
+.line {
+    height: 1px;
+    background: black;
 }

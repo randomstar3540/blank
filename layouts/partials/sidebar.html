@@ -3,9 +3,9 @@
 		<div>
 			<h3>LATEST POSTS</h3>
 		</div>
-		<div>
+		<div class="foot-nav">
 			<ul>
-				{{ range first 5 (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
+				{{ range first 2 (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
 				<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
 				{{ end }}
 			</ul>
